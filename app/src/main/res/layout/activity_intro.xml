@@ -9,7 +9,7 @@
     android:gravity="center_horizontal"
     android:orientation="vertical"
     android:paddingBottom="15dp"
-    tools:context=".introActivity">
+    tools:context=".activities.introActivity">
 
     <TextView
         android:id="@+id/tv_app_name_intro"

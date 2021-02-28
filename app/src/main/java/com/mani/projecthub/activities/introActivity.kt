@@ -1,12 +1,10 @@
-package com.mani.projecthub
+package com.mani.projecthub.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
 import android.view.WindowManager
 import com.mani.projecthub.databinding.ActivityIntroBinding
-import com.mani.projecthub.databinding.ActivitySignUpBinding
 
 class introActivity : AppCompatActivity() {
     private lateinit var binding: ActivityIntroBinding
@@ -22,10 +20,10 @@ class introActivity : AppCompatActivity() {
         )
 
         binding.btnSignUpIntro.setOnClickListener{
-            startActivity(Intent(this,signUpActivity::class.java))
+            startActivity(Intent(this, signUpActivity::class.java))
         }
         binding.btnSignInIntro.setOnClickListener{
-            startActivity(Intent(this,signInActivity::class.java))
+            startActivity(Intent(this, signInActivity::class.java))
         }
 
     }

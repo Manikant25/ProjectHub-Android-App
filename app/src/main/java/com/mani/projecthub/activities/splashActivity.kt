@@ -1,12 +1,10 @@
-package com.mani.projecthub
+package com.mani.projecthub.activities
 
 import android.content.Intent
-import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
-import android.view.Window
 import android.view.WindowManager
+import com.mani.projecthub.R
 import java.util.concurrent.Executors
 import java.util.concurrent.ScheduledExecutorService
 import java.util.concurrent.TimeUnit
@@ -27,7 +25,7 @@ class splashActivity : AppCompatActivity() {
         // Execute a task in the background thread after 3 seconds.
         backgroundExecutor.schedule({
             // Your code logic goes here
-            startActivity(Intent(this,introActivity::class.java))
+            startActivity(Intent(this, introActivity::class.java))
             finish()
         }, 3, TimeUnit.SECONDS)
     }
